@@ -1,6 +1,6 @@
 # Quasar App
 
-> A Quasar project
+> A Quasar project to list my own repos
 
 ## Build Setup
 
