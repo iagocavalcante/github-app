@@ -45,7 +45,7 @@
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "4.2.0",
     "friendly-errors-webpack-plugin": "1.7.0",
-    "glob": "7.1.5",
+    "glob": "7.1.6",
     "html-webpack-plugin": "3.2.0",
     "http-proxy-middleware": "0.20.0",
     "json-loader": "0.5.7",
