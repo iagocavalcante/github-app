@@ -17,7 +17,7 @@
     "quasar-extras": "2.0.9",
     "quasar-framework": "0.17.20",
     "vue": "2.6.12",
-    "vue-router": "3.5.0"
+    "vue-router": "3.5.1"
   },
   "devDependencies": {
     "autoprefixer": "10.2.0",
