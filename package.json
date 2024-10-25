@@ -16,7 +16,7 @@
     "babel-runtime": "6.26.0",
     "quasar-extras": "2.0.9",
     "quasar-framework": "0.17.20",
-    "vue": "2.6.12",
+    "vue": "3.0.0",
     "vue-router": "3.5.1"
   },
   "devDependencies": {
