@@ -1,44 +1,30 @@
 <template>
-  <div class="error-page window-height window-width bg-light column items-center no-wrap">
-    <div class="error-code bg-primary flex items-center content-center justify-center">
-      404
-    </div>
-    <div>
-      <div class="error-card shadow-4 bg-white column items-center justify-center no-wrap">
-        <q-icon name="error_outline" color="grey-5" />
-        <p class="caption text-center">Oops. Nothing here...</p>
-        <p class="text-center group">
-          <q-btn
-            v-if="canGoBack"
-            color="primary"
-            push
-            @click="goBack"
-            icon="keyboard_arrow_left"
-          >
-            Go back
-          </q-btn>
-          <q-btn
-            color="primary"
-            push
-            @click="$router.replace('/')"
-            icon-right="home"
-          >
-            Go home
-          </q-btn>
-        </p>
+  <q-page class="flex flex-center">
+    <div class="text-center">
+      <div class="text-h1 text-grey-3">404</div>
+      <p class="text-grey-7">Oops. Nothing here...</p>
+      <div class="q-gutter-md">
+        <q-btn
+          v-if="canGoBack"
+          color="primary"
+          label="Go back"
+          icon="arrow_back"
+          @click="goBack"
+        />
+        <q-btn
+          color="primary"
+          label="Go home"
+          icon="home"
+          @click="$router.replace('/')"
+        />
       </div>
     </div>
-  </div>
+  </q-page>
 </template>
 
 <script>
-import { QBtn, QIcon } from 'quasar'
-
 export default {
-  components: {
-    QBtn,
-    QIcon
-  },
+  name: 'Error404',
   data () {
     return {
       canGoBack: window.history.length > 1
@@ -51,27 +37,3 @@ export default {
   }
 }
 </script>
-
-<style lang="stylus">
-.error-page
-  .error-code
-    height 50vh
-    width 100%
-    padding-top 15vh
-    @media (orientation: landscape) { 
-      font-size 30vw
-    }
-    @media (orientation: portrait) { 
-      font-size 30vh
-    }
-    color rgba(255, 255, 255, .2)
-    overflow hidden
-  .error-card
-    border-radius 2px
-    margin-top -50px
-    width 80vw
-    max-width 600px
-    padding 25px
-    > i
-      font-size 5rem
-</style>
