@@ -14,6 +14,7 @@ export default configure(function () {
         node: 'node20'
       },
       vueRouterMode: 'hash',
+      vueOptionsAPI: true,
     },
     devServer: {
       open: false

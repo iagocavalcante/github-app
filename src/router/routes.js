@@ -1,15 +1,15 @@
 const routes = [
   {
     path: '/',
-    component: () => import('components/Hello.vue')
+    component: () => import('../components/Hello.vue')
   },
   {
     path: '/repos',
-    component: () => import('components/Repos.vue')
+    component: () => import('../components/Repos.vue')
   },
   {
     path: '/:catchAll(.*)*',
-    component: () => import('components/Error404.vue')
+    component: () => import('../components/Error404.vue')
   }
 ]
 
