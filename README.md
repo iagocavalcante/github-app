@@ -11,8 +11,8 @@
 
 ## Tech Stack
 
-- **Framework:** Quasar v2.18.6 (Vue 3.4)
-- **Build Tool:** Vite 5.4.21
+- **Framework:** Quasar v2 (Vue 3)
+- **Build Tool:** Vite 8
 - **HTTP Client:** Native fetch API
 
 ## Build Setup
